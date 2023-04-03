@@ -6,92 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aboutUs</title>
     <link rel="stylesheet" href="/index.css">
+    <link  href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+		table {
+            margin-left: 220px;
+            margin-right: 20px;
+			border-collapse: collapse;
+			width: 70%;
+		}
+
+		th, td {
+			padding: 8px;
+			text-align: center;
+			border: 1px solid #0c0c0c;
+            background-color: #cccccc5a;
+		}
+
+		th {
+			background-color: #d90429;
+		}
+	</style>
 </head>
 <body>
+    <header>
+        <div class="nav container">
+          <i class='bx bx-menu' id="menu-icon"></i>
+          <img src="img/at.jpg" alt="logo" style="height: 90px; width: 100px;">
+          <a href="#" class="logo">Auto <span>Parts</span> </a>
+          <ul class="navbar">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="companies.html">Companies</a></li>
+              <li><a href="Parts.html">Parts</a></li>
+              <li><a href="aboutUs.html">About us</a></li>
+              <li><a href="contactUs.html">Contact us</a></li>
+          </ul>
+          <i class='bx bx-search'id="search-icon" style="color: #d90429;" ></i>
+        </div>   
+      </header>
+      <br>
+      <br>
+      <br>
     <section class="about container" id="about">
         <div class="about-img">
-            <img src="img/about.png" alt="maaskdjd">
+            <img src="img/bg.jpg" alt="maaskdjd">
         </div>
         <div class="about-text">
             <span>About us</span>
             <h2>cheap pricse with <br>Quality Parts</h2>
             <br>
-             <a href="#" class="btn"> learn more</a>
+             <a href="#move" class="btn"> learn more</a>
         </div>
     </section>
     
     <section class="Parts" id="parts">
         <div class="heading">
-            <span>what we offer</span>
-            <h2> Our Auto parts It Always Excellent,</h2>
-            <h1>We provide all original spare parts with factory warranty</h1>
+            <p style="color: #fff; margin-left: 10%;margin-right: 10%; border-radius: 7% ; background-color: #d90429; font-size: 30px;">We are a group of students from Sultan Qaboos University. We have created a website that sells auto parts. This site may be useful to people who are looking for spare parts that are not available or broken. In this site, we collect the cheapest and best types of auto parts and compare them with our local prices in the market. We also provide spare parts for old cars.
+            </p>
         </div>
-
-        <div class="parts-container container"> 
-            <!--BoX 1-->
-            <div class="box">
-                <img src="img/part1.png" alt="">
-                <h3>Auto Spare parts</h3>
-                <br>
-                <span>$100.9</span>
-                <a href="#" class="btn">Bay Now</a>
-                <a href="#" class="details">View Details</a>
-
-            </div>
-             <!--BoX 2-->
-             <div class="box">
-                <img src="img/part2.png" alt="">
-                <h3>Auto Spare parts</h3>
-                <br>
-                <span>$100.9</span>
-                <a href="#" class="btn">Bay Now</a>
-                <a href="#" class="details">View Details</a>
-
-            </div>
-             <!--BoX 3-->
-             <div class="box">
-                <img src="img/part3.png" alt="">
-                <h3>Auto Spare parts</h3>
-                <br>
-                <span>$100.9</span>
-                <a href="#" class="btn">Bay Now</a>
-                <a href="#" class="details">View Details</a>
-
-            </div>
-             <!--BoX 4-->
-             <div class="box">
-                <img src="img/part4.png" alt="">
-                <h3>Auto Spare parts</h3>
-                <br>
-                <span>$100.9</span>
-                <a href="#" class="btn">Bay Now</a>
-                <a href="#" class="details">View Details</a>
-
-            </div>
-             <!--BoX 5-->
-             <div class="box">
-                <img src="img/part5.png" alt="">
-                <h3>Auto Spare parts</h3>
-                <br>
-                <span>$100.9</span>
-                <a href="#" class="btn">Bay Now</a>
-                <a href="#" class="details">View Details</a>
-
-            </div>
-             <!--BoX 6-->
-             <div class="box">
-                <img src="img/part6.png" alt="">
-                <h3>Auto Spare parts</h3>
-                <br>
-                <span>$100.9</span>
-                <a href="#" class="btn">Bay Now</a>
-                <a href="#" class="details">View Details</a>
-
-            </div>
-
-        </div>
-
     </section>
+    <table style="margin-top: 30%; margin-bottom:5% ;">
+        <caption style="color: #d90429;font-size: 35px; " id="move">  About Our price </caption>
+
+		<thead>
+			<tr>
+				<th>Companies/Parts</th>
+				<th>Mechanical Parts</th>
+				<th>Car consumables</th>
+				
+			</tr>
+		</thead >
+		<tbody>
+			<tr>
+				<td style="font-weight: 900;">NISSAN</td>
+				<td>Gear box <br><span style="color: #d90429;"> 65-145 OMR</span> </td>
+				<td>oil Engine <br><span style="color: #d90429;"> 5-12 OMR</span></td>
+				
+			</tr>
+			<tr>
+				<td style="font-weight: 900;">TOYOTA</td>
+				<td>Engine <br> <span style="color: #d90429;"> 200-330 OMR</span></td>
+				<td>Air Filter <br> <span style="color: #d90429;"> 4-8 OMR</span></td>
+				
+			</tr>
+			
+			
+            </table>      
+            <table style="margin-bottom:5% ;">
+                <caption style="color: #d90429;font-size: 35px; ">About Market price</caption>
+        
+                <thead>
+                    <tr>
+                        <th>Companies/Parts</th>
+                        <th>Mechanical Parts</th>
+                        <th>Car consumables</th>
+                        
+                    </tr>
+                </thead >
+                <tbody>
+                    <tr>
+                        <td style="font-weight: 900;">NISSAN</td>
+                        <td>Gear box <br><span style="color: #d90429;"> 100-190 OMR</span> </td>
+                        <td>oil Engine <br><span style="color: #d90429;"> 8-18 OMR</span></td>
+                        
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 900;">TOYOTA</td>
+                        <td>Engine <br> <span style="color: #d90429;"> 350-520 OMR</span></td>
+                        <td>Air Filter <br> <span style="color: #d90429;"> 7-14 OMR</span></td>
+                        
+                    </tr>
+                    
+                    
+                    </table>      
+				
     
     
 </body>

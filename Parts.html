@@ -4,29 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aboutUs</title>
+    <title>parts</title>
     <link rel="stylesheet" href="/index.css">
+    <link  href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"> 
+    <style>
+        form {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        label {
+        display: block;
+        margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+        background-color: #3e8e41;
+        }
+
+        @media screen and (max-width: 600px) {
+        form {
+            width: 100%;
+        }
+        }
+            </style>
 </head>
 <body>
-    <section class="about container" id="about">
-        <div class="about-img">
-            <img src="img/about.png" alt="">
-        </div>
-        <div class="about-text">
-            <span>About us</span>
-            <h2>cheap pricse with <br>Quality Parts</h2>
-            <br>
-             <a href="#" class="btn"> learn more</a>
-        </div>
-    </section>
-    
+    <header>
+        <div class="nav container">
+          <i class='bx bx-menu' id="menu-icon"></i>
+          <img src="img/at.jpg" alt="logo" style="height: 90px; width: 100px;">
+          <a href="#" class="logo">Auto <span>Parts</span> </a>
+          <ul class="navbar">
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="companies.html">Companies</a></li>
+              <li><a href="Parts.html">Parts</a></li>
+              <li><a href="aboutUs.html">About us</a></li>
+              <li><a href="contactUs.html">Contact us</a></li>
+          </ul>
+          <i class='bx bx-search'id="search-icon"  ></i>
+        </div>   
+      </header>
+      <br>
+      <br>
+      <br>
     <section class="Parts" id="parts">
         <div class="heading">
             <span>what we offer</span>
             <h2> Our Auto parts It Always Excellent,</h2>
             <h1>We provide all original spare parts with factory warranty</h1>
         </div>
-
+        
         <div class="parts-container container"> 
             <!--BoX 1-->
             <div class="box">
@@ -34,7 +86,7 @@
                 <h3>Engine Spare Parts</h3>
                 <br>
                 <span>280.9 OMR</span>
-                <a href="#" class="btn">Bay Now</a>
+                <a href="#move1" class="btn">Bay Now</a>
                 <a href="#" class="details">View Details</a>
 
             </div>
@@ -44,7 +96,7 @@
                 <h3>Mechanical Parts</h3>
                 <br>
                 <span>100.5 OMR</span>
-                <a href="#" class="btn">Bay Now</a>
+                <a href="#move1" class="btn">Bay Now</a>
                 <a href="#" class="details">View Details</a>
 
             </div>
@@ -54,7 +106,7 @@
                 <h3>Electical Parts</h3>
                 <br>
                 <span>50.3 OMR</span>
-                <a href="#" class="btn">Bay Now</a>
+                <a href="#move1" class="btn">Bay Now</a>
                 <a href="#" class="details">View Details</a>
 
             </div>
@@ -63,28 +115,28 @@
                 <img src="img/p4.jpg" alt="">
                 <h3>Structural Parts</h3>
                 <br>
-                <span>$100.9</span>
-                <a href="#" class="btn">Bay Now</a>
+                <span>1000 OMR</span>
+                <a href="#move1" class="btn">Bay Now</a>
                 <a href="#" class="details">View Details</a>
 
             </div>
              <!--BoX 5-->
              <div class="box">
-                <img src="img/part5.png" alt="">
-                <h3>Auto Spare parts</h3>
+                <img src="img/part4.png" alt="">
+                <h3>Car consumables</h3>
                 <br>
-                <span>$100.9</span>
-                <a href="#" class="btn">Bay Now</a>
+                <span>40.3 OMR</span>
+                <a href="#move1" class="btn">Bay Now</a>
                 <a href="#" class="details">View Details</a>
 
             </div>
              <!--BoX 6-->
              <div class="box">
                 <img src="img/part6.png" alt="">
-                <h3>Auto Spare parts</h3>
+                <h3>Car tires</h3>
                 <br>
-                <span>$100.9</span>
-                <a href="#" class="btn">Bay Now</a>
+                <span>150.7 OMR</span>
+                <a href="#move1" class="btn">Bay Now</a>
                 <a href="#" class="details">View Details</a>
 
             </div>
@@ -92,6 +144,36 @@
         </div>
 
     </section>
+    <br>
+    <br>
+    <h2  style="margin-left: 40%;" id="move1" >Auto Parts Order Form</h2>
+     <form  action="https://formsubmit.co/s130749@student.squ.edu.om" method="post"method="get">
+        
+         <br>
+        <label for="name"><br><br> Name:</label> 
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="part-name">Part Name:</label>
+        <input type="text" id="part-name" name="part-name" required>
+        
+        <label for="part-number">Part Number:</label>
+        <input type="text" id="part-number" name="part-number" required>
+        
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="100" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        
+        <input type="submit" value="Submit Order">
+      </form>
+      
     
     
 </body>

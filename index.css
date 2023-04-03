@@ -10,11 +10,7 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-:root{
-    --main-color:#d90429;
-    --text-color:#020102;
-    --bg-color:#fff;
-}
+
 section{
     padding:4rem 0 2rem ;
 }
@@ -113,7 +109,7 @@ header{
     width: 100%;
     min-height: 640px;
     display: flex;
-    background:url(img/3.jpg) ;
+    border-radius: 1%;
     
     background-repeat: no-repeat;
     background-size: cover;
