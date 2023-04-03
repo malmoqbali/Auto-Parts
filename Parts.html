@@ -10,11 +10,14 @@
    
     <style>
         form {
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        }
+			background-color: #9e021c1f;
+			border-radius: 5px;
+			padding: 20px;
+            height: 750px;
+			width: 500px;
+			margin: 50px auto;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+		}
 
         label {
         display: block;
@@ -146,10 +149,12 @@
     </section>
     <br>
     <br>
-    <h2  style="margin-left: 40%;" id="move1" >Auto Parts Order Form</h2>
+
      <form  action="https://formsubmit.co/s130749@student.squ.edu.om" method="post"method="get">
-        
+        <h3  style="margin-left: 25%;" id="move1"  >Auto Parts Order Form</h3>
          <br>
+        <img src="img/at.jpg" alt="logo" style="height: 90px; width: 100px;margin-left: 37%;>
+
         <label for="name"><br><br> Name:</label> 
         <input type="text" id="name" name="name" required>
         
@@ -168,13 +173,12 @@
         <label for="quantity">Quantity:</label>
         <input type="number" id="quantity" name="quantity" min="1" max="100" required>
         
-        <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea>
         
-        <input type="submit" value="Submit Order">
+        
+        <input type="submit" value="Submit Order" style="background-color: #9e021c;">
       </form>
       
-    
+      
     
 </body>
 </html>
